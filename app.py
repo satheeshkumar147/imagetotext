@@ -28,7 +28,7 @@ image = ""
 if uploaded_img is not None:
     image = Image.open(uploaded_img)
     st.image(image, caption = "Image Uploaded",
-             use_column_width = True)
+             use_container_width = True)
     
 def get_gemini_response(input, image):
     model = genai.GenerativeModel("gemini-1.5-flash")
